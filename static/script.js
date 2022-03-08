@@ -1,7 +1,11 @@
 Dropzone.autoDiscover = false;
-
+const remoteHost = 'http://40.69.147.94'
 const myDropzone = new Dropzone("#my-dropzone",{
-    url: 'http://40.69.147.94/upload/',
+    url: remoteHost+ '/upload/',
+    headers: {
+        'Cache-Control': null,
+        'X-Requested-With': null,
+     } ,
     // maxFiles: 2,
     maxFilessize: 10, //MB
     acceptedFiles: '.jpg,.png',
@@ -20,7 +24,7 @@ const myDropzone = new Dropzone("#my-dropzone",{
                 // div.style.minWidth = '5rem';
                 const image = document.createElement('img')
                 image.classList = 'card-img rounded-circle out-img'
-                image.src= item.url
+                image.src= `${remoteHost}${item.url}`
                 col5.appendChild(image)
                 const col7 = document.createElement('div')
                 col7.classList = 'col-sm-8'
