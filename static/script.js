@@ -1,7 +1,7 @@
 Dropzone.autoDiscover = false;
 
 const myDropzone = new Dropzone("#my-dropzone",{
-    url: 'upload/',
+    url: 'http://40.69.147.94/upload/',
     // maxFiles: 2,
     maxFilessize: 10, //MB
     acceptedFiles: '.jpg,.png',
