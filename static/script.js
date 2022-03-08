@@ -1,5 +1,5 @@
 Dropzone.autoDiscover = false;
-const remoteHost = 'http://40.69.147.94'
+const remoteHost = 'https://deepfake.alishdahal.com.np'
 const myDropzone = new Dropzone("#my-dropzone",{
     url: remoteHost+ '/upload/',
     headers: {
