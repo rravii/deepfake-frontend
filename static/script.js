@@ -35,7 +35,7 @@ const myDropzone = new Dropzone("#my-dropzone",{
                     // div.style.minWidth = '5rem';
                     const image = document.createElement('img')
                     image.classList = 'card-img rounded-circle out-img'
-                    image.src= item.image
+                    image.src= remoteHost +item.image
                     col5.appendChild(image)
                     const col7 = document.createElement('div')
                     col7.classList = 'col-sm-8'
