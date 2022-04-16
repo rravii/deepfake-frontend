@@ -1092,7 +1092,7 @@ section {
   background-color: transparent !important;
   border-radius: 5px !important;
   max-width: 100%;
-  max-height: 300px;
+  max-height: 250px;
   overflow-y: auto;
   overflow-x: hidden;
 }
